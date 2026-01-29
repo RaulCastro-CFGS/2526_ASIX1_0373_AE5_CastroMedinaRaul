@@ -1,4 +1,4 @@
-
+/* Css de los contenedores */
 .contenedor-principal {
     display: flex;
     flex-direction: wrap; 
@@ -13,7 +13,6 @@
     padding: 20px;
     border-right: 2px solid #ddd; 
 }
-
 
 .columna-central {
     flex: 0 0 55%;
@@ -38,7 +37,6 @@
 
 
 .titulo-superior {
-    position: sticky;
     top: 0;
     width: 100%; 
     text-align: center;
@@ -46,5 +44,38 @@
     padding: 20px;
     background-color: #3165ce;
     color: white;
-   
+}
+
+
+
+/* Css para la galería */
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+.tarjeta-foto {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px  oklch(0% 0 0 / 0.349);
+}
+
+
+.tarjeta-foto img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.info-foto {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #3165ce;
 }
