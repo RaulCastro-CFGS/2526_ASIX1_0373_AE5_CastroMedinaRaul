@@ -1,3 +1,50 @@
-/* 1. Configuración básica de la página */
-* { box-sizing: border-box; }
-body { margin: 0; font-family: sans-serif; background: #f4f4f4; }
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: wrap; 
+    width: 100%;
+    min-height: 100vh; 
+}
+
+
+.columna-menu {
+    flex: 0 0 20%; 
+    background-color: #f8f9fa; 
+    padding: 20px;
+    border-right: 2px solid #ddd; 
+}
+
+
+.columna-central {
+    flex: 0 0 55%;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+
+.columna-noticias {
+    flex: 0 0 25%; 
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-left: 2px solid #ddd; 
+}
+
+
+.seccion-bloque {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ccc;
+}
+
+
+.titulo-superior {
+    position: sticky;
+    top: 0;
+    width: 100%; 
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #3165ce;
+    color: white;
+   
+}

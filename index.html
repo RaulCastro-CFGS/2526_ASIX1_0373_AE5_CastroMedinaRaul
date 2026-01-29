@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,17 +6,44 @@
     <title>Turismo en Mi Ciudad</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
-    <h3 style="text-align: center;">Qué visitar en Barcelonat</h3>
-    <div class="columna-izquierda">
-    <h3>Menú</h3>
-    <ul>
-        <li><a href="#galeria">Fotos de la ciudad</a></li>
-        <li><a href="#lugares">Qué visitar</a></li>
-        <li><a href="#mapa">Cómo llegar</a></li>
-        <li><a href="#innovacion">Recomendado</a></li>
-    </ul>
+    <h3 class="titulo-superior" style="text-align: center;">Qué visitar en Barcelona</h3>
+    <div class="contenedor-principal">
+        
+    
+    
+        <div class="columna-menu">
+            <div class="titulo-seccion">Menú</div>
+                <ul class="lista-menu">
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#lugares">Lugares de interés</a></li>
+                    <li><a href="#mapa">Mapa</a></li>
+                    <li><a href="#noticias">Últimas Noticias</a></li>
+                </ul>
+            </div>
+
+            <div class="columna-central">
+                <div id="galeria" class="bloque-contenido">
+                    <h2>Galería</h2>
+                </div>
+
+                <div id="lugares" class="bloque-contenido">
+                    <h2>Lugares de interés</h2>
+                </div>
+
+                <div id="mapa" class="bloque-contenido">
+                    <h2>Mapa</h2>
+                </div>
+            </div>
+
+            <div id="noticias" class="columna-noticias">
+                <div class="titulo-seccion">Últimas Noticias</div>
+            </div>
+
+        </div>
+
     </div>
 </body>
 </html>
