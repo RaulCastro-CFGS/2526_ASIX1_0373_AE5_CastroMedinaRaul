@@ -1,79 +1,200 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Descubre Barcelona</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h2 class="titulo-superior" style="text-align: center;">Barcelona, el mejor destino turístico</h3>
+    <a href="https://www.barcelonaturisme.com/" target="_blank" class="boton-flotante">Oficina de Turismo</a>
+
+    <div class="cabecera-sitio">
+        <h2 class="titulo-superior">Barcelona, el mejor destino turístico</h2>
+    </div>
+
     <div class="contenedor-principal">
         
-    
-    
         <div class="columna-menu">
             <div class="titulo-seccion"><h3>Menú</h3></div>
-                <ul class="lista-menu">
-                    <li><a href="#galeria">Galería</a></li>
-                    <li><a href="#lugares">Lugares de interés</a></li>
-                    <li><a href="#mapa">Mapa</a></li>
-                    <li><a href="#noticias">Últimas Noticias</a></li>
-                </ul>
+            <ul class="lista-menu">
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#lugares">Lugares de interés</a></li>
+                <li><a href="#mapa">Mapa</a></li>
+                <li><a href="#noticias">Últimas Noticias</a></li>
+            </ul>
+        </div>
+
+        <div class="columna-central">
+            <!-- Creo la sección de la galería-->
+            <div id="galeria" class="seccion-bloque">
+                <h2>Galería</h2>
+                <div class="grid-galeria">
+                    <div class="tarjeta-foto">
+                        <img src="Imagenes/sagrada_familia.jpg" alt="Sagrada Familia">
+                        <div class="info-foto">Sagrada Família</div>
+                    </div>
+                    <div class="tarjeta-foto">
+                        <img src="Imagenes/park_guell.jpg" alt="Park Güell">
+                        <div class="info-foto">Park Güell</div>
+                    </div>
+                    <div class="tarjeta-foto">
+                        <img src="Imagenes/casa_battlo.jpg" alt="Casa Batlló">
+                        <div class="info-foto">Casa Batlló</div>
+                    </div>
+                    <div class="tarjeta-foto">
+                        <img src="Imagenes/el_born.jpg" alt="Barrio del Born">
+                        <div class="info-foto">El Born</div>
+                    </div>
+                    <div class="tarjeta-foto">
+                        <img src="Imagenes/la_barceloneta.jpg" alt="Playa Barceloneta">
+                        <div class="info-foto">La Barceloneta</div>
+                    </div>
+                    <div class="tarjeta-foto">
+                        <img src="Imagenes/montjuic.jpg" alt="Fuentes de Montjuïc">
+                        <div class="info-foto">Montjuïc</div>
+                    </div>
+                </div>
             </div>
 
-            <div class="columna-central">
-                <div id="galeria" class="bloque-contenido">
-    <h2>Galería</h2>
-    
-    <div class="grid-galeria">
-        <div class="tarjeta-foto">
-            <img src="Imagenes/sagrada_familia.jpg" alt="Sagrada Familia">
-            <div class="info-foto">Sagrada Família</div>
-        </div>
-        <div class="tarjeta-foto">
-            <img src="Imagenes/park_guell.jpg" alt="Park Güell">
-            <div class="info-foto">Park Güell</div>
-        </div>
-        <div class="tarjeta-foto">
-            <img src="Imagenes/casa_battlo.jpg" alt="Casa Batlló">
-            <div class="info-foto">Casa Batlló</div>
-        </div>
-        <div class="tarjeta-foto">
-            <img src="Imagenes/el_born.jpg" alt="Barrio del Born">
-            <div class="info-foto">El Born</div>
-        </div>
-        <div class="tarjeta-foto">
-            <img src="Imagenes/la_barceloneta.jpg" alt="Playa Barceloneta">
-            <div class="info-foto">La Barceloneta</div>
-        </div>
-        <div class="tarjeta-foto">
-            <img src="Imagenes/montjuic.jpg" alt="Fuentes de Montjuïc">
-            <div class="info-foto">Montjuïc</div>
-        </div>
-    </div>
+            <!-- Creo la sección de lugares de interés -->
 
-    <br>
-    
-</div>
+            <div id="lugares" class="seccion-bloque">
+                <h2>Lugares de interés</h2>
+                <div class="contenedor-fichas">
+                    <div class="ficha-lugar">
+                        <img src="Imagenes/canaletes.jpg" alt="Fuente de canaletas">
+                        <div class="cuerpo-ficha">
+                            <h3>Fuente de canaletas</h3>
+                            <p class="descripcion">Punto de encuentro histórico de la afición culé.</p>
+                            <p class="ubicacion"><strong>Ubicación:</strong> La Rambla, 133, Barcelona</p>
+                        </div>
+                    </div>
+                    <div class="ficha-lugar">
+                        <img src="Imagenes/spotifycampnou.jpg" alt="Spotify Camp Nou">
+                        <div class="cuerpo-ficha">
+                            <h3>Spotify Camp Nou</h3>
+                            <p class="descripcion">Estadio oficial del FC Barcelona.</p>
+                            <p class="ubicacion"><strong>Ubicación:</strong> Les Corts, 08028 Barcelona</p>
+                        </div>
+                    </div>
+                    <div class="ficha-lugar">
+                        <img src="Imagenes/cosmocaixa.jpg" alt="CosmoCaixa">
+                        <div class="cuerpo-ficha">
+                            <h3>CosmoCaixa</h3>
+                            <p class="descripcion">Museo de ciencia interactivo de referencia.</p>
+                            <p class="ubicacion"><strong>Ubicación:</strong> Isaac Newton, 26, Barcelona</p>
+                        </div>
+                    </div>
+                    <div class="ficha-lugar">
+                        <img src="Imagenes/plazacatalunya.jpg" alt="Plaza de Cataluña">
+                        <div class="cuerpo-ficha">
+                            <h3>Plaza de Cataluña</h3>
+                            <p class="descripcion">Corazón y centro neurálgico de la ciudad.</p>
+                            <p class="ubicacion"><strong>Ubicación:</strong> Plaça de Catalunya, Barcelona</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div id="lugares" class="bloque-contenido">
-            <h2>Lugares de interés</h2>
+            <div id="mapa" class="mb-5">
+                <h2>Mapa</h2>
+                <div class="ratio ratio-16x9">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.4560731553755!2d2.16836437657!3d41.38701547130006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f210f8190d%3A0x693bc2f310f8190d!2sPlaca%20de%20Catalunya!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses" 
+                        style="border:0; width: 100%; height: 450px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="seccion-bloque">
+                <h2>Información Útil</h2>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
+                                <strong>¿Cómo moverse por la ciudad?</strong>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Red excelente de metro y buses.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+                                <strong>Comida Típica</strong>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Prueba el pa amb tomàquet y la crema catalana.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div id="mapa" class="bloque-contenido">
-            <h2>Mapa</h2>
-        </div>
-
-        </div>
-            <div id="noticias" class="columna-noticias">
+        <!-- Creo la sección de últimas noticias -->
+        <div id="noticias" class="columna-noticias">
             <div class="titulo-seccion"><h3>Últimas Noticias</h3></div>
+            
+            <div class="bloque-noticia">
+                <img src="Imagenes/noticia1.jpg" alt="Noticia 1">
+                <div class="contenido-noticia">
+                    <h4>Seis jugadores con 10 goles</h4>
+                    <p>Registro único en Europa esta temporada...</p>
+                    <a href="https://www.fcbarcelona.es/es/futbol/primer-equipo/noticias/4442426/seis-jugadoras-alcanzan-los-10-goles-esta-temporada" target="_blank">Leer más</a>
+                </div>
+            </div>
+
+            <div class="bloque-noticia">
+                <img src="Imagenes/noticia2.jpg" alt="Noticia 2">
+                <div class="contenido-noticia">
+                    <h4>Dani Olmo brilla en el campo</h4>
+                    <p>El canterano destaca por su polivalencia...</p>
+                    <a href="https://www.mundodeportivo.com/futbol/fc-barcelona/20260201/1002612569/olmo-le-sienta-posicion-campo.html" target="_blank">Leer más</a>
+                </div>
+            </div>
+
+            <div class="bloque-noticia">
+                <img src="Imagenes/noticia3.jpg" alt="Noticia 3">
+                <div class="contenido-noticia">
+                    <h4>Protestas laborales</h4>
+                    <p>Conflicto en las guarderías municipales...</p>
+                    <a href="https://www.sport.es/es/noticias/barca/raphinha-kounde-ok-copa-126323313" target="_blank">Leer más</a>
+                </div>
+            </div>
+
+            <div class="bloque-noticia">
+                <img src="Imagenes/noticia4.jpg" alt="Noticia 4">
+                <div class="contenido-noticia">
+                    <h4>Novedades en la enfermería</h4>
+                    <p>Estado de las lesiones en el equipo femenino...</p>
+                    <a href="https://www.mundodeportivo.com/futbol/fc-barcelona/20260201/1002612411/laia-aleixandri-mapi-leon-cara-cruz-enfermeria-barca.html" target="_blank">Leer más</a>
+                </div>
+            </div>
+
+            <div class="bloque-noticia">
+                <img src="Imagenes/noticia5.jpg" alt="Noticia 5">
+                <div class="contenido-noticia">
+                    <h4>Racha negativa del Espanyol</h4>
+                    <p>Análisis de los últimos resultados pericos...</p>
+                    <a href="https://as.com/futbol/primera/el-espanyol-se-emborrona-f202601-n/" target="_blank">Leer más</a>
+                </div>
+            </div>
         </div>
-
-        
-
-    </div>
+    
+    </div> 
+    <!-- Llamo a la librería de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
